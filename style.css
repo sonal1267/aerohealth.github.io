@@ -268,48 +268,6 @@
 	cursor: pointer;
 }
 
-/*Water*/
-.water
-{
-	width: 80%;
-	margin: auto;
-	text-align: center;
-	padding-top: 100px;
-}
-.water h1
-{
-	font-size: 38px;
-	font-weight: 600;
-}
-.water p
-{
-	color: #777;
-	font-size: 14px;
-	font-weight: 300;
-	line-height: 22px;
-	padding: 10px;
-}
-.totalwater
-{
-	margin-top: 5%;
-	display: flex;
-	justify-content: space-between;
-}
-.proswater
-{
-	background:#fff3f3;
-	border-radius:10px;
-	flex-basis: 31%;
-	margin-bottom: 5%;
-	padding: 20px 12px;
-	box-sizing: border-box;
-	transition: 0.5s;
-}
-.proswater:hover
-{
-	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
-	cursor: pointer;
-}
 
 
 /*Footer*/
