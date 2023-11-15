@@ -42,7 +42,7 @@ const getAirQuality = async (lat, lon) => {
 
 const setValuesOfAir = airData => {
 	const aqi = airData.list[0].main.aqi
-	let airStat = "", color = ""
+	let airStat = "", color = "", healthrecommendation=""
 
 	// Set Air Quality Index
 	airQuality.innerText = aqi
@@ -65,10 +65,12 @@ const setValuesOfAir = airData => {
 			case 4:
 				airStat = "Poor"
 				color = "rgb(204, 83, 13)"
+			        healthrecommendation = "Avoid Outdoor Exercise<br>Wear mask outdoors<br>Run an air purifier"
 				break
 		case 5:
 			airStat = "Very Poor"
 			color = "rgb(204, 13, 13)"
+			healthrecommendation = "Avoid Outdoor Exercise<br>Wear mask outdoors<br>Run an air purifier"
 			break
 		default:
 			airStat = "Unknown"
@@ -76,6 +78,7 @@ const setValuesOfAir = airData => {
 
 	airQualityStat.innerText = airStat
 	airQualityStat.style.color = color
+	airQualityStat.innerText = healthrecommendation
 }
 
 const setComponentsOfAir = airData => {
