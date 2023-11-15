@@ -42,7 +42,7 @@ const getAirQuality = async (lat, lon) => {
 
 const setValuesOfAir = airData => {
 	const aqi = airData.list[0].main.aqi
-	let airStat = "", color = "", 
+	let airStat = "", color = ""
 
 	// Set Air Quality Index
 	airQuality.innerText = aqi
